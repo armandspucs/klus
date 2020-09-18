@@ -1,3 +1,8 @@
+fetch('sample.json')
+  .then(response => response.json())
+  .then(data => console.log(data));
+
+
 const vielasPoga = document.getElementById('vielas-poga');
 const aprikojumsPoga = document.getElementById('aprikojums-poga');
 const aprikojumsRindas = document.getElementsByClassName('aprikojums');
