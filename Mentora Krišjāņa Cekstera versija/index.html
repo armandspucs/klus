@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="lv-LV">
+
+<head>
+    <title>Start(it)</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/custom.css" media="screen" title="no title" charset="utf-8">
+    <link rel="icon" href="images\Start(IT)SmallLogo.png">
+    <meta charset="utf8">
+</head>
+
+<body>
+<div class="row max_heigh">           
+  <div class="col-md-6 max_heigh">
+    <div class="blue_field">
+        <h1 class="mb-3">Esi sveicināts ĶLUS</h1>
+        <div class="line"></div>
+        <p class="mb-5">Tavas laboraorijas uzskaites sistēma</p>
+    </div>
+    <img class="KLUSlogo" src="images\KLUSlogo.png">
+  </div>
+  <div class="col-md-6 max_heigh">
+    <h1 class="izvelne">Ko Jūs vēlaties darīt šodien?</h1>
+    <p class="teksts_pirma_lapa">Piekļūsti savas skolas laboratorijai vai aplūku publiski pieejamo informāciju un datus par laboratoriju</p>
+        <!-- <a href="Views/Pieslegties.html" class="btn btn-primary btn-lg button_heigh">Pieslēgties</a>
+        <a href="Views/Pieslegties.html" class="btn btn-secondary btn-lg button_heigh">Piekļūt publiskiem datiem</a> -->
+        <button type="button" class="btn btn-primary btn-lg button_heigh" onclick="location.href='Views/pieslegsanas.html'">
+            Pieslēgties
+        </button>
+        <button type="button" class="btn btn-secondary btn-lg button_heigh" onclick="location.href='Views/publiskaDatubaze.html'">
+            Piekļūt publiskiem datiem
+        </button>
+        <button id="klume_btn" type="button" class="btn">
+            Ziņot par kļūmi
+        </button>
+  </div>
+</div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="javaScript/bootstrap.min.js"></script>
+<script type="text/javascript" src="javaScript/custom.js"></script>
+
+</html>
