@@ -1,8 +1,8 @@
-# Augusta klātienes tikšanās reizē veidotā versija
-Sergejs Kižlo to veidoja kamēr stāstija.
+# A
 
-- html,css pirmā lapa un publisko datu lapa
-- ar js pogām var parādīt vai paslēpt tabulas rindas
+
+
+Balstīts uz Sergeja Kižlo versiju kuru veidoja kamēr stāstija.
 
 
 
