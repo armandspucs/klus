@@ -2,3 +2,7 @@
 Frontend kas veidots "StartIT" fonda kursu ietvaros.
 
 Skat. 'brančus' un atrodi dažādas pabeigtības pakāpes...
+
+
+bonus:
+- repl.it konfigurācijas fails
