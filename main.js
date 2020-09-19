@@ -6,17 +6,23 @@ const vielasRindas = document.getElementsByClassName('viela');
 vielasPoga.addEventListener('click', function() {
     vielasPoga.classList.toggle('selected');
 
-    for (let i = 0; i < aprikojumsRindas.length; i++) {
-        aprikojumsRindas[i].classList.toggle('slepts');
-    }
+    //for (let i = 0; i < aprikojumsRindas.length; i++) {
+    //    aprikojumsRindas[i].classList.toggle('slepts');
+    //}
+
+    raditNoliktavasDatus('vielas');
+
 });
 
 aprikojumsPoga.addEventListener('click', function() {
     aprikojumsPoga.classList.toggle('selected');
 
-    for (let i = 0; i < vielasRindas.length; i++) {
-        vielasRindas[i].classList.toggle('slepts');
-    }
+    //for (let i = 0; i < vielasRindas.length; i++) {
+    //    vielasRindas[i].classList.toggle('slepts');
+    //}
+
+    raditNoliktavasDatus('aprikojums');
+
 });
 
 
@@ -30,7 +36,7 @@ async function raditNoliktavasDatus(tipsAtlase)
 {
 
   let datiNoServera = await fetch('noliktava.json');
-  let datiJson = await datiNoServera.json(); //if (datiNoServera.ok) {
+  let datiJson = await datiNoServera.json();
 
   let datiNoliktava = datiJson['noliktava'];
   
