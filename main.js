@@ -26,20 +26,14 @@ aprikojumsPoga.addEventListener('click', function() {
 
 
 
-async function raditNoliktavasDatus()
+async function raditNoliktavasDatus(tips)
 {
   let datiNoServera = await fetch('noliktava.json');
-  let datiJson;
+  let datiJson = await datiNoServera.json(); //if (datiNoServera.ok) {
 
-  if (datiNoServera.ok) 
-  {
-    datiJson = await datiNoServera.json();
-  }
-
-  //let datiJson = await dati.json();
   let datiNoliktava = datiJson['noliktava'];
   
-  let tabula = document.getElementById('public-db-table-body');
+  let tabula = document.querySelector('.public-db-table tbody');
   tabula.innerHTML = '';
 
   //datiNoliktava.length - saņemto ierakstu skaits
@@ -71,7 +65,7 @@ async function raditNoliktavasDatus()
 
 }//beidzas raditNoliktavasDatus(dati)
 
-raditNoliktavasDatus();
+
 
 
 
