@@ -48,7 +48,7 @@ async function raditNoliktavasDatus(tipsAtlase)
       tipsClass = tipsClass.toLowerCase();
       tipsClass = tipsClass.replace('ī','i');
 
-      if(tipsAtlase!=tipsClass)
+      if(tipsAtlase!=undefined && tipsAtlase!=tipsClass)
       {
         continue;
       }
