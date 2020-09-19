@@ -1,10 +1,11 @@
 const vielasPoga = document.getElementById('vielas-poga');
 const aprikojumsPoga = document.getElementById('aprikojums-poga');
+const vissPoga = document.getElementById('viss-poga');
 const aprikojumsRindas = document.getElementsByClassName('aprikojums');
 const vielasRindas = document.getElementsByClassName('viela');
 
 vielasPoga.addEventListener('click', function() {
-    vielasPoga.classList.toggle('selected');
+    //vielasPoga.classList.toggle('selected');
 
     //for (let i = 0; i < aprikojumsRindas.length; i++) {
     //    aprikojumsRindas[i].classList.toggle('slepts');
@@ -15,13 +16,20 @@ vielasPoga.addEventListener('click', function() {
 });
 
 aprikojumsPoga.addEventListener('click', function() {
-    aprikojumsPoga.classList.toggle('selected');
+    //aprikojumsPoga.classList.toggle('selected');
 
     //for (let i = 0; i < vielasRindas.length; i++) {
     //    vielasRindas[i].classList.toggle('slepts');
     //}
 
     raditNoliktavasDatus('aprikojums');
+
+});
+
+
+vissPoga.addEventListener('click', function() {
+
+  raditNoliktavasDatus();
 
 });
 
