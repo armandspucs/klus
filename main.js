@@ -10,7 +10,7 @@ vielasPoga.addEventListener('click', function() {
     //    aprikojumsRindas[i].classList.toggle('slepts');
     //}
 
-    raditNoliktavasDatus('vielas');
+    raditNoliktavasDatus('viela');
 
 });
 
