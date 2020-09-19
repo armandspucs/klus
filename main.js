@@ -48,7 +48,7 @@ async function raditNoliktavasDatus(tipsAtlase)
       tipsClass = tipsClass.toLowerCase();
       tipsClass = tipsClass.replace('ī','i');
 
-      if(tipsAtlase==tipsClass)
+      if(tipsAtlase!=tipsClass)
       {
         continue;
       }
@@ -69,6 +69,9 @@ async function raditNoliktavasDatus(tipsAtlase)
 
 
 }//beidzas raditNoliktavasDatus(dati)
+
+
+//raditNoliktavasDatus('aprikojums');    raditNoliktavasDatus('viela');
 
 
 
