@@ -28,7 +28,6 @@ aprikojumsPoga.addEventListener('click', function() {
 
 async function raditNoliktavasDatus(tipsAtlase)
 {
-  console.log(tipsAtlase);
 
   let datiNoServera = await fetch('noliktava.json');
   let datiJson = await datiNoServera.json(); //if (datiNoServera.ok) {
