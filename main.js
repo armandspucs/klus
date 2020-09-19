@@ -26,7 +26,7 @@ aprikojumsPoga.addEventListener('click', function() {
 
 
 
-async function raditNoliktavasDatus(tips)
+async function raditNoliktavasDatus(tipsAtlase)
 {
   let datiNoServera = await fetch('noliktava.json');
   let datiJson = await datiNoServera.json(); //if (datiNoServera.ok) {
@@ -44,20 +44,25 @@ async function raditNoliktavasDatus(tips)
   {
     //i - loop indekss 0,1,2,3,4....
 
-    tipsClass = datiNoliktava[i]['Tips'];
-    tipsClass = tipsClass.toLowerCase();
-    tipsClass = tipsClass.replace('ī','i');
+      tipsClass = datiNoliktava[i]['Tips'];
+      tipsClass = tipsClass.toLowerCase();
+      tipsClass = tipsClass.replace('ī','i');
 
-    tabula.innerHTML = tabula.innerHTML+`
-    <tr class="`+tipsClass+`">
-    <td> `+datiNoliktava[i]['ID']+` </td>
-    <td> `+datiNoliktava[i]['Nosaukums']+` </td>
-    <td> `+datiNoliktava[i]['Tips']+` </td>
-    <td> `+datiNoliktava[i]['Apakštips']+` </td>
-    <td> `+datiNoliktava[i]['Skaits']+` </td>
-    <td> `+datiNoliktava[i]['Svars']+` </td>
-    <td> `+datiNoliktava[i]['Komentāri']+` </td>
-    </tr>`;
+      if(tipsAtlase==tipsClass)
+      {
+        continue;
+      }
+
+      tabula.innerHTML = tabula.innerHTML+`
+      <tr class="`+tipsClass+`">
+      <td> `+datiNoliktava[i]['ID']+` </td>
+      <td> `+datiNoliktava[i]['Nosaukums']+` </td>
+      <td> `+datiNoliktava[i]['Tips']+` </td>
+      <td> `+datiNoliktava[i]['Apakštips']+` </td>
+      <td> `+datiNoliktava[i]['Skaits']+` </td>
+      <td> `+datiNoliktava[i]['Svars']+` </td>
+      <td> `+datiNoliktava[i]['Komentāri']+` </td>
+      </tr>`;
 
 
   }//loop beigas
